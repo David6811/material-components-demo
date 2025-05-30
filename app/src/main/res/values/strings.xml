@@ -13,4 +13,8 @@
 
     <string name="favorite">favorite</string>
     <string name="content_description_favorite">content_description_favorite</string>
+    <string name="delete">delete</string>
+    <string name="content_description_delete">content_description_delete</string>
+    <string name="content_description_more">content_description_more</string>
+    <string name="more">more</string>
 </resources>
