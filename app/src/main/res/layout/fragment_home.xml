@@ -16,4 +16,13 @@
         android:text="@string/toggle_action_bar"
         android:textSize="16sp"
         app:icon="@drawable/ic_star_checkable_24" />
+
+    <Button
+        android:id="@+id/bottomsheet_button"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cat_bottomsheet_button_text"/>
 </LinearLayout>

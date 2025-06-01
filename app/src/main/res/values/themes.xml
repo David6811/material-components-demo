@@ -18,7 +18,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
-        <item name="windowActionModeOverlay">false</item>  <!--=为true 则叠在app bar上 -->
+        <item name="windowActionModeOverlay">true</item>  <!--=为true 则叠在app bar上 -->
         <item name="actionModeStyle">@style/Widget.App.ActionMode</item>
         <item name="actionModeCloseDrawable">@drawable/close_24px</item>
         <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
