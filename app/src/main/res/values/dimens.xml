@@ -39,4 +39,10 @@
     <dimen name="m3_card_elevated_hovered_z">2dp</dimen> <!-- Transitions from level1 to level2 -->
     <dimen name="m3_card_elevated_dragged_z">7dp</dimen> <!-- Transitions from level1 to level4 -->
     <dimen name="m3_card_elevated_disabled_z">0dp</dimen>
+
+    <!-- checkbox -->
+    <dimen name="cat_checkbox_line_separator_thickness">4dp</dimen>
+    <dimen name="cat_checkbox_line_separator_margin">8dp</dimen>
+    <dimen name="cat_checkbox_padding">8dp</dimen>
+    <dimen name="cat_checkbox_indent">8dp</dimen>
 </resources>
