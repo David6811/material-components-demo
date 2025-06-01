@@ -37,6 +37,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catCarouselHeroFragment)
         }
 
+        binding.checkboxButton.setOnClickListener {
+            findNavController().navigate(R.id.catCheckboxFragment)
+        }
+
         return root
     }
 
