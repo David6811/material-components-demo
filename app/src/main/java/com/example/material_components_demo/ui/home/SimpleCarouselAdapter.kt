@@ -5,8 +5,10 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.material_components_demo.R
 
-class SimpleCarouselAdapter(private val items: List<Int>) :
+class SimpleCarouselAdapter(items: List<Int>) :
     RecyclerView.Adapter<SimpleCarouselAdapter.ViewHolder>() {
+
+    private var items: List<Int> = items
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.carousel_image_view)
@@ -22,5 +24,10 @@ class SimpleCarouselAdapter(private val items: List<Int>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.imageView.setImageResource(items[position])
+    }
+
+    fun updateItems(newItems: List<Int>) {
+        this.items = newItems
+        notifyDataSetChanged()
     }
 }
