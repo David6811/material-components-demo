@@ -20,6 +20,13 @@
     android:layout_width="match_parent"
     android:layout_height="600dp">
 
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="40dp"
+        android:layout_height="6dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:background="#FF888888"/>
 
     <TextView
         android:id="@+id/bottomsheet_state"
@@ -31,5 +38,25 @@
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bottomsheet_textinputlayout"
+        android:layout_width="@dimen/material_textinput_default_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomsheet_state"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/cat_bottomsheet_textfield_label">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/cat_bottomsheet_modal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomsheet_textinputlayout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cat_bottomsheet_button_label_enabled"/>
 </RelativeLayout>

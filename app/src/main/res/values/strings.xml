@@ -18,14 +18,15 @@
     <string name="content_description_more">content_description_more</string>
     <string name="more">more</string>
     <string name="toggle_action_bar">Toggle Action Bar</string>
+
     <string name="cat_bottomsheet_button_text">Show Modal BottomSheetDialog</string>
     <string name="cat_bottomsheet_title">Bottom Sheet</string>
     <string name="cat_bottomsheet_button_clicked">Button clicked</string>
     <string name="cat_bottomsheet_button_label_enabled">Enabled</string>
     <string name="cat_bottomsheet_button_label_disabled">Disabled</string>
     <string name="cat_bottomsheet_state_collapsed" translatable="false">STATE_COLLAPSED</string>
-    <string name="cat_bottomsheet_textfield_label"
-        description="The label for the bottom sheet text field. [CHAR_LIMIT=100]">
-    Label
-  </string>
+    <string name="cat_bottomsheet_state_expanded" translatable="false">STATE_EXPANDED</string>
+    <string name="cat_bottomsheet_state_dragging" translatable="false">STATE_DRAGGING</string>
+    <string name="cat_bottomsheet_state_half_expanded" translatable="false">STATE_EXPANDED</string>
+    <string name="cat_bottomsheet_textfield_label" description="The label for the bottom sheet text field. [CHAR_LIMIT=100]">Label</string>
 </resources>
