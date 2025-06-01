@@ -7,20 +7,20 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.ActionMode
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.material_components_demo.R
 import com.example.material_components_demo.databinding.FragmentHomeBinding
-import androidx.appcompat.view.ActionMode
-import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
     private var actionMode: ActionMode? = null
+    private var bottomSheetDialog: BottomSheetDialog? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +42,24 @@ class HomeFragment : Fragment() {
                 actionMode = (activity as AppCompatActivity).startSupportActionMode(actionModeCallback)
                 actionMode?.title = "1 selected"
             }
+        }
+
+        // Set up BottomSheetDialog
+        bottomSheetDialog = BottomSheetDialog(requireContext())
+        // Inflate the simplified XML layout for the BottomSheet
+        val bottomSheetView = inflater.inflate(R.layout.cat_bottomsheet_content, container, false)
+        bottomSheetDialog?.setContentView(bottomSheetView)
+
+        // Find the only view in the BottomSheet layout
+        val stateTextView: TextView = bottomSheetView.findViewById(R.id.bottomsheet_state)
+
+        // Set initial title
+        stateTextView.text = getString(R.string.cat_bottomsheet_state_collapsed)
+
+        // Button to show the BottomSheet
+        val button: Button = binding.bottomsheetButton
+        button.setOnClickListener {
+            bottomSheetDialog?.show()
         }
 
         return root
@@ -74,6 +92,8 @@ class HomeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        bottomSheetDialog?.dismiss() // Dismiss the dialog to avoid memory leaks
+        bottomSheetDialog = null
         _binding = null
     }
 }
