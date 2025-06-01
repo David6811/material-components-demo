@@ -5,4 +5,38 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- Rich Media Demo Dimensions -->
+    <dimen name="cat_card_rich_media_demo_min_height">148dp</dimen>
+    <dimen name="cat_card_single_spacing">8dp</dimen>
+    <dimen name="cat_card_double_spacing">16dp</dimen>
+    <dimen name="cat_card_triple_spacing">24dp</dimen>
+    <dimen name="cat_card_content_padding">16dp</dimen>
+
+
+    <!-- Cards on mobile default to 8dp margins. {@code layout_margin} needs to be set directly on a
+      {@link View} in its layout and won't work when included as part of a style. -->
+    <dimen name="mtrl_card_spacing">8dp</dimen>
+    <!-- Default elevation for {@link MaterialCardView}. -->
+    <dimen name="mtrl_card_elevation">1dp</dimen>
+    <!-- Default corner radius for {@link MaterialCardView}. -->
+    <dimen name="mtrl_card_corner_radius">4dp</dimen>
+    <!-- Size of the icon to be placed when the card is checked -->
+    <dimen name="mtrl_card_checked_icon_size">24dp</dimen>
+    <!-- Margin between the checked icon and the card -->
+    <dimen name="mtrl_card_checked_icon_margin">8dp</dimen>
+    <!-- TranslationZ for card when it's on dragged state. -->
+    <dimen name="mtrl_card_dragged_z">5dp</dimen>
+
+    <dimen name="m3_card_elevation">@dimen/m3_sys_elevation_level0</dimen>
+    <dimen name="m3_card_hovered_z">1dp</dimen> <!-- Transitions from level 0 to level 1 -->
+    <dimen name="m3_card_dragged_z">6dp</dimen> <!-- Transitions from level 0 to level 3 -->
+    <dimen name="m3_card_disabled_z">0dp</dimen>
+    <dimen name="m3_card_stroke_width">1dp</dimen>
+
+    <dimen name="m3_card_elevated_elevation">@dimen/m3_comp_elevated_card_container_elevation</dimen>
+    <dimen name="m3_card_elevated_hovered_z">2dp</dimen> <!-- Transitions from level1 to level2 -->
+    <dimen name="m3_card_elevated_dragged_z">7dp</dimen> <!-- Transitions from level1 to level4 -->
+    <dimen name="m3_card_elevated_disabled_z">0dp</dimen>
 </resources>
