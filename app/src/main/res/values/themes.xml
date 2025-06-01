@@ -20,7 +20,7 @@
 
         <item name="windowActionModeOverlay">false</item>  <!--=为true 则叠在app bar上 -->
         <item name="actionModeStyle">@style/Widget.App.ActionMode</item>
-        <item name="actionModeCloseDrawable">@drawable/ic_launcher_foreground</item>
+        <item name="actionModeCloseDrawable">@drawable/close_24px</item>
         <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
 
     </style>
