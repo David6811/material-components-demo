@@ -34,4 +34,13 @@
         android:textSize="16sp"
         android:layout_marginTop="16dp"
         android:text="@string/cat_carts_button_text"/>
+
+    <Button
+        android:id="@+id/carousel_button"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cat_carts_button_text"/>
 </LinearLayout>

@@ -21,6 +21,9 @@
 
     <string name="cat_bottomsheet_button_text">Show Modal BottomSheetDialog</string>
     <string name="cat_carts_button_text">Show rich media fragment</string>
+    <string name="cat_carousel_button_text">Show carousel hero fragment</string>
+
+
     <string name="cat_bottomsheet_title">Bottom Sheet</string>
     <string name="cat_bottomsheet_button_clicked">Button clicked</string>
     <string name="cat_bottomsheet_button_label_enabled">Enabled</string>

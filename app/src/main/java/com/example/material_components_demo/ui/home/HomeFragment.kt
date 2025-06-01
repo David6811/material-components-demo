@@ -33,6 +33,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catCardRichMediaDemoFragment)
         }
 
+        binding.carouselButton.setOnClickListener {
+            findNavController().navigate(R.id.catCarouselHeroFragment)
+        }
+
         return root
     }
 
