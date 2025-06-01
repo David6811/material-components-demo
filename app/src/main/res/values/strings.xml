@@ -17,4 +17,5 @@
     <string name="content_description_delete">content_description_delete</string>
     <string name="content_description_more">content_description_more</string>
     <string name="more">more</string>
+    <string name="toggle_action_bar">Toggle Action Bar</string>
 </resources>
