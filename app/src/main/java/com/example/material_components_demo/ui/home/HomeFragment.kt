@@ -30,21 +30,12 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        toggleActionBar()
+        toggleBottomSheetDialog(inflater, container)
+        return root
+    }
 
-        val toggleActionModeButton: Button = binding.textHome
-
-//        val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            toggleActionModeButton.text = it
-//        }
-
-        toggleActionModeButton.setOnClickListener {
-            if (actionMode == null) {
-                actionMode = (activity as AppCompatActivity).startSupportActionMode(actionModeCallback)
-                actionMode?.title = "1 selected"
-            }
-        }
-
+    private fun toggleBottomSheetDialog(inflater: LayoutInflater, container: ViewGroup?) {
         // Set up BottomSheetDialog
         bottomSheetDialog = BottomSheetDialog(requireContext())
         // Inflate the simplified XML layout for the BottomSheet
@@ -52,27 +43,41 @@ class HomeFragment : Fragment() {
         bottomSheetDialog?.setContentView(bottomSheetView)
 
         // Configure BottomSheetBehavior
-        val bottomSheetInternal = bottomSheetDialog?.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
+        val bottomSheetInternal =
+            bottomSheetDialog?.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
         if (bottomSheetInternal != null) {
             val behavior = BottomSheetBehavior.from(bottomSheetInternal)
             behavior.isDraggable = true // Ensure the bottom sheet is draggable
-            behavior.peekHeight = 200 // Set a reasonable peek height (adjust as needed)
+            behavior.peekHeight = 300 // Set a reasonable peek height (adjust as needed)
 
             behavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
                 override fun onStateChanged(bottomSheet: View, newState: Int) {
-                    val stateTextView: TextView = bottomSheetView.findViewById(R.id.bottomsheet_state)
+                    val stateTextView: TextView =
+                        bottomSheetView.findViewById(R.id.bottomsheet_state)
                     when (newState) {
                         BottomSheetBehavior.STATE_EXPANDED -> {
                             stateTextView.text = getString(R.string.cat_bottomsheet_state_expanded)
                         }
+
                         BottomSheetBehavior.STATE_COLLAPSED -> {
                             stateTextView.text = getString(R.string.cat_bottomsheet_state_collapsed)
                         }
+
                         BottomSheetBehavior.STATE_DRAGGING -> {
                             stateTextView.text = getString(R.string.cat_bottomsheet_state_dragging)
                         }
+
                         BottomSheetBehavior.STATE_HALF_EXPANDED -> {
-                            stateTextView.text = getString(R.string.cat_bottomsheet_state_half_expanded)
+                            stateTextView.text =
+                                getString(R.string.cat_bottomsheet_state_half_expanded)
+                        }
+
+                        BottomSheetBehavior.STATE_HIDDEN -> {
+                           // TODO()
+                        }
+
+                        BottomSheetBehavior.STATE_SETTLING -> {
+                           // TODO()
                         }
                     }
                 }
@@ -93,8 +98,23 @@ class HomeFragment : Fragment() {
         button.setOnClickListener {
             bottomSheetDialog?.show()
         }
+    }
 
-        return root
+    private fun toggleActionBar() {
+        val toggleActionModeButton: Button = binding.textHome
+
+        //        val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+        //        homeViewModel.text.observe(viewLifecycleOwner) {
+        //            toggleActionModeButton.text = it
+        //        }
+
+        toggleActionModeButton.setOnClickListener {
+            if (actionMode == null) {
+                actionMode =
+                    (activity as AppCompatActivity).startSupportActionMode(actionModeCallback)
+                actionMode?.title = "1 selected"
+            }
+        }
     }
 
     private val actionModeCallback = object : ActionMode.Callback {
