@@ -27,4 +27,9 @@
         android:id="@+id/catCardRichMediaDemoFragment"
         android:name="com.example.material_components_demo.ui.home.CatCardRichMediaDemoFragment"
         android:label="Cat Card Demo" />
+
+    <fragment
+        android:id="@+id/catCarouselHeroFragment"
+        android:name="com.example.material_components_demo.ui.home.CatCarouselHeroFragment"
+        android:label="Carousel Hero Demo" />
 </navigation>
