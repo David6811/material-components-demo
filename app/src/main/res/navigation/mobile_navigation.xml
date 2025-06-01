@@ -22,4 +22,9 @@
         android:name="com.example.material_components_demo.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/catCardRichMediaDemoFragment"
+        android:name="com.example.material_components_demo.ui.home.CatCardRichMediaDemoFragment"
+        android:label="Cat Card Demo" />
 </navigation>
