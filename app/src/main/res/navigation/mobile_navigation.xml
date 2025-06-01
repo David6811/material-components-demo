@@ -32,4 +32,9 @@
         android:id="@+id/catCarouselHeroFragment"
         android:name="com.example.material_components_demo.ui.home.CatCarouselHeroFragment"
         android:label="Carousel Hero Demo" />
+
+    <fragment
+        android:id="@+id/catCheckboxFragment"
+        android:name="com.example.material_components_demo.ui.home.CheckboxFragment"
+        android:label="Checkbox Demo" />
 </navigation>
