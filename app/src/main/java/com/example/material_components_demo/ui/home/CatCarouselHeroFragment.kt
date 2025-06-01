@@ -30,7 +30,6 @@ class CatCarouselHeroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.hero_start_carousel_recycler_view)
-        val debugSwitch = view.findViewById<MaterialSwitch>(R.id.debug_switch)
         val drawDividersSwitch = view.findViewById<MaterialSwitch>(R.id.draw_dividers_switch)
         val enableFlingSwitch = view.findViewById<MaterialSwitch>(R.id.enable_fling_switch)
         val itemCountDropdown = view.findViewById<AutoCompleteTextView>(R.id.item_count_dropdown)
