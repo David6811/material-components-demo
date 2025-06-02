@@ -59,6 +59,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catDatePickerFragment)
         }
 
+        binding.dialogButton.setOnClickListener {
+            findNavController().navigate(R.id.catDialogFragment)
+        }
+
 
         return root
     }
