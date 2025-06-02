@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="floating_toolbar_bottom" type="id" />
+    <item name="floating_toolbar_left" type="id" />
+    <item name="floating_toolbar_right" type="id" />
+</resources>

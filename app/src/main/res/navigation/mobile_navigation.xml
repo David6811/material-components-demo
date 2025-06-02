@@ -63,4 +63,9 @@
         android:name="com.example.material_components_demo.ui.home.divider.DividerFragment"
         android:label="Divider Demo" />
 
+    <fragment
+        android:id="@+id/catFloatingToolbarFragment"
+        android:name="com.example.material_components_demo.ui.home.floatingtoolbar.FloatingToolbarFragment"
+        android:label="Floating Toolbar Demo" />
+
 </navigation>
