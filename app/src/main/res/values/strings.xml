@@ -26,6 +26,7 @@
     <string name="cat_chip_button_text">Show chip fragment</string>
     <string name="cat_color_button_text">Show color fragment</string>
     <string name="cat_adaptive_button_text">Show adaptive fragment</string>
+    <string name="cat_date_picker_button_text">Show Date Picker fragment</string>
 
 
     <string name="cat_bottomsheet_title">Bottom Sheet</string>

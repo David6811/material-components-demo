@@ -55,6 +55,10 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        binding.datePickerButton.setOnClickListener {
+            findNavController().navigate(R.id.catDatePickerFragment)
+        }
+
 
         return root
     }
