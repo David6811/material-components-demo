@@ -208,4 +208,10 @@
   </string-array>
 
   <string name="cat_chip_group_refresh_content_description">Refresh chip groups</string>
+
+    <!-- color -->
+    <string name="cat_color_surfaces" translatable="false">Surfaces</string>
+    <string name="cat_color_utility" translatable="false">Utility</string>
+    <string name="cat_color_content" translatable="false">Content</string>
+    <string name="cat_color_utility_note" translatable="false">Note: When dynamic color is enabled, the Error color roles will look different from baseline because they will be harmonized with Primary by default.</string>
 </resources>
