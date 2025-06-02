@@ -51,4 +51,8 @@
     <dimen name="cat_picker_demo_circle_indicator_size">7dp</dimen>
     <dimen name="cat_picker_demo_circle_indicator_margin_bottom">5dp</dimen>
     <dimen name="cat_picker_demo_circle_indicator_top_spacer_size">4dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="cat_dialog_demo_padding">8dp</dimen>
+
 </resources>
