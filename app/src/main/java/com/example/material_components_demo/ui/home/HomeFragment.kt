@@ -41,6 +41,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catCheckboxFragment)
         }
 
+        binding.chipButton.setOnClickListener {
+            findNavController().navigate(R.id.catChipFragment)
+        }
+
         return root
     }
 

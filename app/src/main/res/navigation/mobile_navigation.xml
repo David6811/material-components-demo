@@ -37,4 +37,9 @@
         android:id="@+id/catCheckboxFragment"
         android:name="com.example.material_components_demo.ui.home.CheckboxFragment"
         android:label="Checkbox Demo" />
+
+    <fragment
+        android:id="@+id/catChipFragment"
+        android:name="com.example.material_components_demo.ui.home.ChipFragment"
+        android:label="Chip Group Demo" />
 </navigation>
