@@ -63,6 +63,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catDialogFragment)
         }
 
+        binding.dividerButton.setOnClickListener {
+            findNavController().navigate(R.id.catDividerFragment)
+        }
+
 
         return root
     }

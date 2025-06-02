@@ -28,6 +28,7 @@
     <string name="cat_adaptive_button_text">Show adaptive fragment</string>
     <string name="cat_date_picker_button_text">Show Date Picker fragment</string>
     <string name="cat_dialog_button_text">Show Dialog fragment</string>
+    <string name="cat_divider_button_text">Show Divider fragment</string>
 
 
     <string name="cat_bottomsheet_title">Bottom Sheet</string>
