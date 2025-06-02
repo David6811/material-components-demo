@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.material_components_demo.R
 import com.example.material_components_demo.databinding.FragmentHomeBinding
+import com.example.material_components_demo.ui.home.adaptive.AdaptiveActivity
 
 class HomeFragment : Fragment() {
 
@@ -47,6 +48,11 @@ class HomeFragment : Fragment() {
 
         binding.colorButton.setOnClickListener {
             findNavController().navigate(R.id.catColorFragment)
+        }
+
+        binding.adaptiveButton.setOnClickListener {
+            val intent = Intent(requireContext(), AdaptiveActivity::class.java)
+            startActivity(intent)
         }
 
 
