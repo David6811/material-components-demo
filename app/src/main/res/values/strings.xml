@@ -24,6 +24,7 @@
     <string name="cat_carousel_button_text">Show carousel hero fragment</string>
     <string name="cat_checkbox_button_text">Show checkbox fragment</string>
     <string name="cat_chip_button_text">Show chip fragment</string>
+    <string name="cat_color_button_text">Show color fragment</string>
 
 
     <string name="cat_bottomsheet_title">Bottom Sheet</string>
