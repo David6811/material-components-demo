@@ -17,6 +17,9 @@ class AdaptiveActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cat_adaptive_list_view_activity)
 
+        // Set a custom title for the app bar
+        supportActionBar?.title = "Adaptive Demo"
+
         // Determine screen size using DisplayMetrics
         val displayMetrics = resources.displayMetrics
         val widthPx = displayMetrics.widthPixels
