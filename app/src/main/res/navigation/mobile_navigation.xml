@@ -47,4 +47,9 @@
         android:id="@+id/catColorFragment"
         android:name="com.example.material_components_demo.ui.home.color.ColorFragment"
         android:label="Color Demo" />
+
+    <fragment
+        android:id="@+id/catAdaptiveFragment"
+        android:name="com.example.material_components_demo.ui.home.adaptive.AdaptiveFragment"
+        android:label="Adaptive Demo" />
 </navigation>

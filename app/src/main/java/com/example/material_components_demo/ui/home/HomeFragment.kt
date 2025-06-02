@@ -1,6 +1,5 @@
 package com.example.material_components_demo.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -47,6 +46,10 @@ class HomeFragment : Fragment() {
 
         binding.colorButton.setOnClickListener {
             findNavController().navigate(R.id.catColorFragment)
+        }
+
+        binding.adaptiveButton.setOnClickListener {
+            findNavController().navigate(R.id.catAdaptiveFragment)
         }
 
 
