@@ -58,4 +58,9 @@
         android:name="com.example.material_components_demo.ui.home.dialog.DialogFragment"
         android:label="Dialog Demo" />
 
+    <fragment
+        android:id="@+id/catDividerFragment"
+        android:name="com.example.material_components_demo.ui.home.divider.DividerFragment"
+        android:label="Divider Demo" />
+
 </navigation>
