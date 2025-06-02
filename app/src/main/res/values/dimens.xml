@@ -45,4 +45,10 @@
     <dimen name="cat_checkbox_line_separator_margin">8dp</dimen>
     <dimen name="cat_checkbox_padding">8dp</dimen>
     <dimen name="cat_checkbox_indent">8dp</dimen>
+
+    <!-- date picker -->
+    <dimen name="cat_picker_demo_padding">8dp</dimen>
+    <dimen name="cat_picker_demo_circle_indicator_size">7dp</dimen>
+    <dimen name="cat_picker_demo_circle_indicator_margin_bottom">5dp</dimen>
+    <dimen name="cat_picker_demo_circle_indicator_top_spacer_size">4dp</dimen>
 </resources>
