@@ -768,4 +768,30 @@
     \n\n\t\tPhasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper, libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
   </string>
 
+  <!-- loading indicators -->
+  <string name="cat_loading_indicator_title"
+      description="Title for the screen that showcases demonstrative usages of the Loading Indicator widget [CHAR LIMIT=NONE]">
+    Loading Indicator
+  </string>
+  <string name="cat_loading_indicator_description"
+      description="Body text describing the LoadingIndicator widget within the design system [CHAR LIMIT=NONE]">
+    LoadingIndicator shows an indeterminate undergoing process.
+  </string>
+  <string name="cat_loading_indicator_default"
+      description="Text label above a default loading indicator. [CHAR LIMIT=NONE]">
+    Loading indicator
+    </string>
+  <string name="cat_loading_indicator_with_container"
+      description="Text label above a loading indicator with a container [CHAR LIMIT=NONE]">
+    Loading indicator with container
+  </string>
+  <string name="cat_loading_indicator_with_multiple_colors"
+      description="Text label above a loading indicator with multiple colors [CHAR LIMIT=NONE]">
+    Loading indicator with multiple colors
+  </string>
+  <string name="cat_loading_indicator_in_a_button"
+      description="Text label above a button with a loading indicator icon [CHAR LIMIT=NONE]">
+    Loading indicator in a button
+  </string>
+
 </resources>
