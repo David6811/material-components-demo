@@ -42,4 +42,9 @@
         android:id="@+id/catChipFragment"
         android:name="com.example.material_components_demo.ui.home.ChipFragment"
         android:label="Chip Group Demo" />
+
+    <fragment
+        android:id="@+id/catColorFragment"
+        android:name="com.example.material_components_demo.ui.home.color.ColorFragment"
+        android:label="Color Demo" />
 </navigation>

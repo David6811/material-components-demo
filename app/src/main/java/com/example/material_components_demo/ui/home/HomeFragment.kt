@@ -45,6 +45,11 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catChipFragment)
         }
 
+        binding.colorButton.setOnClickListener {
+            findNavController().navigate(R.id.catColorFragment)
+        }
+
+
         return root
     }
 
