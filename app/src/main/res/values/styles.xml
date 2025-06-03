@@ -5,4 +5,18 @@
         <item name="subtitleTextStyle">?attr/textAppearanceSubtitle1</item>
         <item name="background">?attr/colorPrimary</item>
     </style>
+
+    <style name="Widget.Material3.LoadingIndicator" parent="android:Widget">
+        <item name="indicatorSize">34dp</item>
+<!--        <item name="containerWidth">@dimen/m3_comp_loading_indicator_container_width</item>-->
+<!--        <item name="containerHeight">@dimen/m3_comp_loading_indicator_container_height</item>-->
+        <item name="indicatorColor">@macro/m3_comp_loading_indicator_active_indicator_color</item>
+<!--        <item name="containerColor">@android:color/transparent</item>-->
+<!--        <item name="android:contentDescription">@string/m3_loading_indicator_content_description</item>-->
+    </style>
+
+    <style name="Widget.Material3.LoadingIndicator.Contained">
+        <item name="indicatorColor">@macro/m3_comp_loading_indicator_contained_active_indicator_color</item>
+<!--        <item name="containerColor">@macro/m3_comp_loading_indicator_contained_container_color</item>-->
+    </style>
 </resources>
