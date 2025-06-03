@@ -68,4 +68,9 @@
         android:name="com.example.material_components_demo.ui.home.floatingtoolbar.FloatingToolbarFragment"
         android:label="Floating Toolbar Demo" />
 
+    <fragment
+        android:id="@+id/catLoadingIndicatorFragment"
+        android:name="com.example.material_components_demo.ui.home.loadingindicator.LoadingIndicatorFragment"
+        android:label="Loading Indicator Demo" />
+
 </navigation>

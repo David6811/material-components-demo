@@ -30,6 +30,7 @@
     <string name="cat_dialog_button_text">Show Dialog fragment</string>
     <string name="cat_divider_button_text">Show Divider fragment</string>
     <string name="cat_floating_toolbar_button_text">Show Floating Toolbar fragment</string>
+    <string name="cat_loading_indicator_button_text">Show Loading Indicator fragment</string>
 
 
     <string name="cat_bottomsheet_title">Bottom Sheet</string>

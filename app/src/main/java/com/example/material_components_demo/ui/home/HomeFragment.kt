@@ -71,6 +71,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catFloatingToolbarFragment)
         }
 
+        binding.loadingIndicatorButton.setOnClickListener {
+            findNavController().navigate(R.id.catLoadingIndicatorFragment)
+        }
+
 
         return root
     }

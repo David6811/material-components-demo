@@ -34,7 +34,7 @@
       android:layout_height="wrap_content"
       android:text="@string/cat_loading_indicator_default" />
 
-    <com.google.android.material.loadingindicator.LoadingIndicator
+    <com.google.android.material.progressindicator.CircularProgressIndicator
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
 
@@ -43,7 +43,7 @@
       android:layout_height="wrap_content"
       android:text="@string/cat_loading_indicator_with_container" />
 
-    <com.google.android.material.loadingindicator.LoadingIndicator
+    <com.google.android.material.progressindicator.CircularProgressIndicator
       style="@style/Widget.Material3.LoadingIndicator.Contained"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
@@ -53,7 +53,7 @@
       android:layout_height="wrap_content"
       android:text="@string/cat_loading_indicator_with_multiple_colors" />
 
-    <com.google.android.material.loadingindicator.LoadingIndicator
+    <com.google.android.material.progressindicator.CircularProgressIndicator
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       app:indicatorColor="@array/cat_custom_indicator_colors" />
