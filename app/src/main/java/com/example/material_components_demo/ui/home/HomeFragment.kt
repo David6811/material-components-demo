@@ -75,6 +75,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.catLoadingIndicatorFragment)
         }
 
+        binding.themeButton.setOnClickListener {
+            findNavController().navigate(R.id.catThemeFragment)
+        }
+
 
         return root
     }

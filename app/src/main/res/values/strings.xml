@@ -31,6 +31,7 @@
     <string name="cat_divider_button_text">Show Divider fragment</string>
     <string name="cat_floating_toolbar_button_text">Show Floating Toolbar fragment</string>
     <string name="cat_loading_indicator_button_text">Show Loading Indicator fragment</string>
+    <string name="cat_theme_button_text">Show Theme Switch fragment</string>
 
 
     <string name="cat_bottomsheet_title">Bottom Sheet</string>
@@ -794,5 +795,8 @@
       description="Text label above a button with a loading indicator icon [CHAR LIMIT=NONE]">
     Loading indicator in a button
   </string>
+  <string name="light">Light</string>
+  <string name="dark">Dark</string>
+  <string name="system_default">System default</string>
 
 </resources>
