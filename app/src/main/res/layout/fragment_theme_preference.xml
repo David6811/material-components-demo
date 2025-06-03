@@ -2,34 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+    android:padding="16dp">
 
     <Button
         android:id="@+id/light_button"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Light"
-        android:drawableStart="@drawable/ic_theme_light_24px"
-        android:background="@android:drawable/btn_default"
-        android:layout_marginEnd="8dp" />
+        android:text="@string/light"
+        app:icon="@drawable/ic_theme_light_24px" />
 
     <Button
         android:id="@+id/dark_button"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dark"
-        android:drawableStart="@drawable/ic_theme_dark_24px"
-        android:background="@android:drawable/btn_default"
-        android:layout_marginEnd="8dp" />
+        android:text="@string/dark"
+        app:icon="@drawable/ic_theme_dark_24px" />
 
     <Button
         android:id="@+id/system_default_button"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="System default"
-        android:drawableStart="@drawable/ic_theme_default_24px"
-        android:background="@android:drawable/btn_default" />
+        android:text="@string/system_default"
+        app:icon="@drawable/ic_theme_default_24px"
+        android:contentDescription="" />
 
 </LinearLayout>

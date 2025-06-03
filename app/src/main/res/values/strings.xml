@@ -795,5 +795,8 @@
       description="Text label above a button with a loading indicator icon [CHAR LIMIT=NONE]">
     Loading indicator in a button
   </string>
+  <string name="light">Light</string>
+  <string name="dark">Dark</string>
+  <string name="system_default">System default</string>
 
 </resources>
